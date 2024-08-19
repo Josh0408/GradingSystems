@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="434.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josh.gradingsystem.StartUp">
+   <children>
+      <ImageView fitHeight="267.0" fitWidth="434.0" pickOnBounds="true" style="-fx-scale-x: 1; -fx-scale-y: 1; -fx-translate-x: 1.1; -fx-translate-y: 1.1;" styleClass="root">
+         <image>
+            <Image url="@Images/istockphoto-1950359091-612x612.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="startUpClick" layoutX="96.0" layoutY="224.0" onMouseClicked="#switchToScene1" prefHeight="25.0" prefWidth="257.0" text="Student Grading System">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.20853080568720384">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</Pane>
