@@ -1,0 +1,11 @@
+.root{
+
+    -fx-background-radius: 50px;
+    -fx-background-image:"istockphoto-1950359091-612x612.jpg";
+}
+.image-view{
+    -fx-opacity: 0.8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5),10,0,0,0);
+
+
+}s

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="440.0" prefWidth="640.0" styleClass="parentPane" stylesheets="@../../../StyleSheet/LoginStyleSheet.css"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josh.gradingsystem.LoginController">
+   <left>
+      <AnchorPane fx:id="logoPane" prefHeight="444.0" prefWidth="285.0" styleClass="parentPane" stylesheets="@../../../StyleSheet/LoginStyleSheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#e3e3e300" layoutX="149.0" layoutY="218.0" radius="100.0" strokeType="INSIDE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="0.36492890995260663" startX="0.7488151658767772" startY="0.12796208530805686">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke></Circle>
+            <Label alignment="CENTER" layoutX="78.0" layoutY="195.0" text="GrandySoft" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="207.0" layoutY="214.0" text="(R)" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="42.0" layoutY="415.0" text="Copyright(C).All right reserve" textFill="#fff5f5">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="31.0" layoutY="24.0" text="Student Grading System">
+               <font>
+                  <Font name="Verdana Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" focusDistance="1.0" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Line endX="86.0" fill="#f8f3f3" layoutX="170.0" layoutY="45.0" startX="-133.0" stroke="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="inputPane" prefHeight="444.0" prefWidth="196.0" styleClass="inputPane" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="77.0" layoutY="40.0" prefHeight="27.0" prefWidth="209.0" text="Secure Login">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="0.03591160220994477" centerY="0.481042654028436" focusDistance="1.0" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="31.0" layoutY="126.0" text="Username">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Label layoutX="33.0" layoutY="184.0" text="Password">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="usernameTxt" layoutX="125.0" layoutY="123.0" prefHeight="25.0" prefWidth="213.0" promptText="Username">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <PasswordField fx:id="passwordTxt" layoutX="125.0" layoutY="181.0" prefHeight="25.0" prefWidth="212.0" promptText="Password">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></PasswordField>
+            <Button fx:id="loginButton" layoutX="39.0" layoutY="243.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="143.0" styleClass="loginButton" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="197.0" layoutY="243.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="25.0" prefWidth="140.0" styleClass="cancelButton" text="Cancel" textFill="#fffbfb">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font></Button>
+            <Hyperlink fx:id="hyperlinkButton" layoutX="76.0" layoutY="302.0" onAction="#switchToScene2" text="Create new Account(User)" textFill="#476d7c">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="15.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Hyperlink>
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="55.0" layoutY="74.0" prefHeight="24.0" prefWidth="270.0">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font></Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

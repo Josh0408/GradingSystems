@@ -1,0 +1,22 @@
+.parentPane{
+    -fx-background-color:linear-gradient(to bottom right, #272b3f, #256b51) ;
+
+}
+.textFill{
+    -fx-background-color: white;
+}
+.pane{
+    -fx-background-color: rgba(255,140,0);
+    -fx-background-radius: 20px;
+
+}
+
+.viewButton{
+    -fxbackground-color: rgba(255,140,0);
+
+}
+
+
+
+
+
